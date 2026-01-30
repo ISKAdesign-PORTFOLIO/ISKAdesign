@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--fonty-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="img/logo_1.svg" alt="Logo Iza" height="42">
+
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#start">Start</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">O mnie</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Usługi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#programs">Programy</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="start" class="hero">
+  <div class="hero-visuals">
+
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="img/maska_2.mp4" type="video/mp4">
+    </video>
+
+    <img src="img/profilowe.jpg" class="hero-photo-main" alt="Iza">
+
+    
+    <img src="img/elipsy_2.svg" class="hero-shape2" alt="">
+
+  </div>
+
+  <div class="container">
+    <div class="row align-items-center min-vh-100">
+
+      <!-- TEKST -->
+      <div class="col-lg-6">
+        <span class="hero-eyebrow">PORTFOLIO</span>
+        <h1 class="hero-title">graficzne</h1>
+
+        <p class="hero-text">
+        Design to dla mnie rozmowa bez słów. Tworzę wizualne historie<br>
+        — od social mediów, przez web, po druk — które przyciągają uwagę<br>
+        i zostają w pamięci.
+        </p>
+
+        <a href="#portfolio" class="btn-hero">ZOBACZ PORTFOLIO</a>
+         <!-- MOBILE IMAGE -->
+      <img src="img/profilowe.jpg" class="hero-photo-mobile d-lg-none" alt="Iza">
+    </div>
+
+      </div>
+
+  </div>
+ 
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-space">
+  <div class="container">
+    <h2 class="text-center mb-4">O mnie</h2>
+    <p class="text-center col-lg-8 mx-auto">
+Jestem GRAFIKIEM KOMPUTEROWYM specjalizującym się w projektowaniu kreacji
+do Social Media, stron www, animacji oraz materiałów do druku.
+Tworzę z pasją - estetyczne, czytelne i skuteczne. 
+
+Ukończyłam studia na kierunku grafika komputerowa i multimedia.
+Posiadam doświadczenie w branży edukacyjnej, beauty, gastronomicznej
+oraz w  branży nieruchomości.
+    </p>
+  </div>
+</section>
+<!-- services -->
+<section id="services" class="services-section">
+  <div class="container text-center">
+
+    <h2 class="section-title mb-5">Zakres usług</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-6 col-md-3">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="img/sociale_4.svg" alt="">
+          </div>
+          <h5>kreacje do sociali</h5>
+          <p>Grafiki oraz animacje - spójne wizualnie, przyciągające uwagę.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="img/strony_1.svg" alt="">
+          </div>
+          <h5>banery Google Ads/FB Ads</h5>
+          <p>Nowoczesne, estetyczne, czytelne i funkcjonalne.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="img/ebooki_2.svg" alt="">
+          </div>
+          <h5>ebooki</h5>
+          <p>Kompleksowe projekty — od okładki po skład wnętrza.</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="service-card">
+          <div class="service-icon">
+            <img src="img/druk.svg" alt="">
+          </div>
+          <h5>materiały drukowane</h5>
+          <p>Banery, plakaty, ulotki — zaprojektowane z dbałością o detale.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section class="PROJECTS">
+  <div class="container">
+    <!-- nagłówek -->
+    <!-- carousel -->
+  </div>
+</section>
+<section id="portfolio" class="portfolio-section">
+
+
+  
+    <!-- BOOTSTRAP CAROUSEL -->
+    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- STRZAŁKI -->
+      <button class="carousel-control-prev"
+        type="button"
+        data-bs-target="#portfolioCarousel"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next"
+        type="button"
+        data-bs-target="#portfolioCarousel"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+     </button>
+      <div class="container text-center">
+
+    <h2 class="section-title text-white mb-5">Portfolio</h2>
+      <div class="carousel-inner">
+       <!-- SLIDE 1 -->
+<div class="carousel-item active">
+  <div class="row g-4 justify-content-center">
+
+    <!-- KARTA 1 -->
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <img src="img/maly_geniusz.jpg" alt="Projekt 1">
+
+        <div class="portfolio-overlay">
+          
+          <p>E-book/layout</p>
+          <button 
+          class="btn-portfolio btn-view"
+          data-type="image"
+          data-src="img/maly_geniusz.jpg"
+          data-bs-toggle="modal"
+          data-bs-target="#portfolioModal">
+          ZOBACZ
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- KARTA 2 -->
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <img src="img/Ebook_Edukido.jpg" alt="Projekt 2">
+
+        <div class="portfolio-overlay">
+          <h3>Edukido</h3>
+          <p>E-book / layout</p>
+          <button 
+          class="btn-portfolio btn-view"
+          data-type="image"
+          data-src="img/Ebook_Edukido.jpg"
+          data-bs-toggle="modal"
+          data-bs-target="#portfolioModal">
+          ZOBACZ
+        </button>
+        </div>
+      </div>
+    </div>
+     <!-- KARTA 3 -->
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <img src="img/fitbook.jpg" alt="Projekt 3">
+
+        <div class="portfolio-overlay">
+          <h3>Fitbook</h3>
+          <p>E-book/layout</p>
+          <button 
+          class="btn-portfolio btn-view"
+          data-type="image"
+          data-src="img/fitbook.jpg"
+          data-bs-toggle="modal"
+          data-bs-target="#portfolioModal">
+          ZOBACZ
+        </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-item">
+          <div class="row g-4 justify-content-center">
+             <!-- KARTA 4 -->
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <img src="img/okladki_sportsmed.jpg" alt="Projekt 4">
+
+        <div class="portfolio-overlay">
+          <h3>Sportsmed</h3>
+          <p>Bannery google ads</p>
+         <button 
+          class="btn-portfolio btn-view"
+          data-type="image"
+          data-src="img/okladki_sportsmed.jpg"
+          data-bs-toggle="modal"
+          data-bs-target="#portfolioModal">
+          ZOBACZ
+        </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- KARTA 5 -->
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <img src="img/dostawa_okien.jpg" alt="Projekt 5">
+
+        <div class="portfolio-overlay">
+          <h3>Dostawa okien</h3>
+          <p>bannery google ads</p>
+          <button 
+          class="btn-portfolio btn-view"
+          data-type="image"
+          data-src="img/dostawa_okien.jpg"
+          data-bs-toggle="modal"
+          data-bs-target="#portfolioModal">
+          ZOBACZ
+        </button>
+        </div>
+      </div>
+    </div>
+     <!-- KARTA 6 -->
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <video class="video" autoplay muted loop playsinline>
+      <source src="img/okladki_tlo_1.mp4" type="video/mp4">
+    </video>
+
+        <div class="portfolio-overlay">
+          <h3>Aries</h3>
+          <p>Bannery html5</p>
+          <button 
+          class="btn-portfolio btn-view"
+          data-type="video"
+          data-src="img/okladki_tlo_1.mp4"
+          data-bs-toggle="modal"
+          data-bs-target="#portfolioModal">
+          ZOBACZ
+        </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+  <!-- SLIDE 3 -->
+<div class="carousel-item">
+  <div class="row g-4 justify-content-center">
+
+    <!-- KARTA 7 -->
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <video class="video" autoplay muted loop playsinline>
+        <source src="img/wsap.mp4" type="video/mp4">
+        </video>
+
+        <div class="portfolio-overlay">
+          <h3>WSAP</h3>
+          <p>Kreacje do social media</p>
+          <button 
+            class="btn-portfolio btn-view"
+            data-type="video"
+            data-src="img/wsap.mp4"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal">
+            ZOBACZ
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- KARTA 8 -->
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <img src="img/noot.jpg" alt="Projekt 9">
+
+        <div class="portfolio-overlay">
+          <h3>Nazwa projektu</h3>
+          <p>Social media</p>
+          <button 
+            class="btn-portfolio btn-view"
+            data-type="image"
+            data-src="img/noot.jpg"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal">
+            ZOBACZ
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- KARTA 9 -->
+    <div class="col-md-4">
+      <div class="portfolio-card">
+
+         <video class="video" autoplay muted loop playsinline>
+        <source src="img/MetaApartments.mp4" type="video/mp4">
+        </video>
+
+        <div class="portfolio-overlay">
+          <h3>Nazwa projektu</h3>
+          <p>Social media</p>
+          <button 
+            class="btn-portfolio btn-view"
+            data-type="video"
+            data-src="img/MetaApartments.mp4"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal">
+            ZOBACZ
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- SLIDE 4 -->
+<div class="carousel-item">
+  <div class="row justify-content-center g-4">
+
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <img src="img/mockup_ulotka.jpg" alt="Projekt druk 1">
+
+        <div class="portfolio-overlay">
+          <h3>Wings</h3>
+          <p>projekt ulotki</p>
+          <button
+            class="btn-portfolio btn-view"
+            data-type="image"
+            data-src="img/mockup_ulotka.jpg"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal">
+            ZOBACZ
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <img src="img/ARTe.jpg" alt="Projekt druk 2">
+                <div class="portfolio-overlay">
+          <h3>ARTe</h3>
+          <p>projekt plakatu i tabletalkera</p>
+          <button
+            class="btn-portfolio btn-view"
+            data-type="image"
+            data-src="img/ARTe.jpg"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal">
+            ZOBACZ
+          </button>
+      </div>
+    </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="portfolio-card">
+        <img src="img/m017t0145_c_stationary_mockup_02july22.jpg" alt="Projekt druk 3">
+        <div class="portfolio-overlay">
+        <h3>Motocontroler</h3>
+          <p>projekt wizyrówki i papieru firmowego</p>
+          <button
+            class="btn-portfolio btn-view"
+            data-type="image"
+            data-src="img/m017t0145_c_stationary_mockup_02july22.jpg"
+            data-bs-toggle="modal"
+            data-bs-target="#portfolioModal">
+            ZOBACZ
+          </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<div class="modal fade" id="portfolioModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+        <button
+        type="button"
+        class="btn-close modal-close"
+        data-bs-dismiss="modal"
+        aria-label="Zamknij">
+      </button>
+
+      <div class="modal-body text-center">
+
+        <img id="modalImage" class="w-100 d-none" alt="">
+        
+        <video id="modalVideo" class="w-100 d-none" controls playsinline>
+          <source id="modalVideoSource" src="" type="video/mp4">
+        </video>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+<section id="programs" class="programs-section">
+  <div class="container text-center">
+
+    <h2 class="section-title text-white mb-5">
+      Pracuję w programach
+    </h2>
+
+    <div class="row justify-content-center g-4">
+
+      <div class="col-4 col-md-2">
+        <div class="program-icon">
+          <img src="img/photoshop@4x.png" alt="Photoshop">
+        </div>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <div class="program-icon">
+          <img src="img/ilustratoe@4x.png" alt="Illustrator">
+        </div>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <div class="program-icon">
+          <img src="img/indesign@4x.png" alt="InDesign">
+        </div>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <div class="program-icon">
+          <img src="img/after@4x.png" alt="After Effects">
+        </div>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <div class="program-icon">
+          <img src="img/figma@4x.png" alt="Figma">
+        </div>
+      </div>
+
+      <div class="col-4 col-md-2">
+        <div class="program-icon">
+          <img src="img/canva@4x.png" alt="Canva">
+        </div>
+
+    </div>
+
+  </div>
+</section>
+  <!-- VIDEO TŁO -->
+<section id="contact" class="contact-section">
+
+  <!-- VIDEO -->
+  <div class="contact-video-section">
+    <video autoplay muted loop playsinline>
+      <source src="img/anim_strona.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- FORMULARZ -->
+  <div class="contact-form-wrapper">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+
+          <div class="contact-card">
+            <h2 class="contact-title mb-4">Kontakt</h2>
+
+            <form id="contactform">
+              <input 
+    type="text"
+    id="name"
+    class="form-control mb-3"
+    placeholder="Imię"
+    required>
+              <input
+    type="email"
+    id="email"
+    class="form-control mb-3"
+    placeholder="Email"
+    required
+  >
+  <textarea
+    id="message"
+    class="form-control mb-4"
+    rows="4"
+    placeholder="Wiadomość"
+    required></textarea>              
+    <button class="btn btn-contact w-100">Wyślij</button>
+            </form>
+            <div id="formMessage" class="mt-3 text-center"></div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STOPKA -->
+  <footer class="footer-section">
+    <div class="container text-center footer-inner">
+    <img src="img/logo_1.svg" alt="Iska Design" class="footer-logo">
+      <p>© 2026 Izabela Sokołowska — Graphic Designer</p>
+      <p>iska.design00@gmail.com | +48 739 241 655</p>
+    </div>
+  </footer>
+
+</section>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("XecRexAK-UB8ux_Dn");
+  })();
+</script>
+
+<script src="contactform.js"></script>
+<script src="services.js"></script>
+<script src="hero-parallax.js"></script>
+<script src="portfolio.js"></script>
+
+</body>
+</html>
