@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   .hero-title {
     margin-left: 0.7rem;
     padding-right: 0.5rem;
-    max-width: 300px;
+    max-width: 200px;
   }
 
   .hero-eyebrow {
@@ -130,6 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
   .hero-title {
     font-size: 2.7rem;
+    line-height: 1;
   }
 }
 
