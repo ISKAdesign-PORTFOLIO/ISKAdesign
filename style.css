@@ -115,8 +115,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero-title {
-    margin-left: 1rem;
-    max-width: 340px;
+    margin-left: 0.7rem;
+    max-width: 300px;
   }
 
   .hero-eyebrow {
