@@ -92,7 +92,9 @@ h1, h2, h3, h4, h5, h6 {
   }
    .hero {
     position: relative;
-    overflow: visible;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
   }
     .hero .row {
     flex-direction: column;
@@ -116,8 +118,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero-title {
     margin-left: 0.7rem;
-    margin-right: 0.5rem;
     max-width: 100%;
+    font-size: 2.7rem;
   }
 
   .hero-eyebrow {
@@ -162,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   font-size: clamp(4rem, 6vw, 5rem);
   font-weight: 800;
-  line-height: 0.5;
+  line-height: 1;
   margin-left: 2.5rem;
   background: linear-gradient(
     100deg,
