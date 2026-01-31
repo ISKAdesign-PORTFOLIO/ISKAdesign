@@ -113,13 +113,13 @@ h1, h2, h3, h4, h5, h6 {
 }
   .hero .container {
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
 
   .hero-title {
     margin-left: 0.7rem;
     max-width: 100%;
-    font-size: 2.7rem;
+    margin-right: 0.5rem;
   }
 
   .hero-eyebrow {
