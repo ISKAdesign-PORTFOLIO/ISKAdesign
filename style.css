@@ -317,55 +317,66 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-nav .nav-link.active::after {
   width: 100%;
 }
-.navbar-toggler {
-  border: none;
-  padding: 0;
-  width: 32px;
-  height: 24px;
-  position: relative;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-/* kreski */
 .toggler-icon {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 100%;
+  width: 26px;
+  height: 2px;
   background: #fff;
-  border-radius: 2px;
-  transition: all 0.35s ease;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-.toggler-icon.top {
+.toggler-icon::before,
+.toggler-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 26px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.toggler-icon::before {
+  top: -8px;
+}
+
+.toggler-icon::after {
+  top: 8px;
+}
+
+
+/* STAN OTWARTY = KRZYŻYK */
+.navbar-toggler.active .toggler-icon {
+  background: transparent;
+}
+
+.navbar-toggler.active .toggler-icon::before {
+  transform: rotate(45deg);
   top: 0;
 }
 
-.toggler-icon.middle {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.toggler-icon.bottom {
-  bottom: 0;
-}
-
-/* STAN OTWARTY = KRZYŻYK */
-.navbar-toggler.active .top {
-  transform: rotate(45deg);
-  top: 50%;
-}
-
-.navbar-toggler.active .middle {
-  opacity: 0;
-}
-
-.navbar-toggler.active .bottom {
+.navbar-toggler.active .toggler-icon::after {
   transform: rotate(-45deg);
-  bottom: 50%;
+  top: 0;
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: #0b0b0f;
+    padding: 1.5rem;
+  }
+}
+/* usuwa mobile tap highlight */
+.navbar-toggler {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* usuwa focus / active glow */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
 #about {
   position: relative;
