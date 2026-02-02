@@ -317,6 +317,56 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-nav .nav-link.active::after {
   width: 100%;
 }
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  width: 32px;
+  height: 24px;
+  position: relative;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* kreski */
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.35s ease;
+}
+
+.toggler-icon.top {
+  top: 0;
+}
+
+.toggler-icon.middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.toggler-icon.bottom {
+  bottom: 0;
+}
+
+/* STAN OTWARTY = KRZYŻYK */
+.navbar-toggler.active .top {
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.navbar-toggler.active .middle {
+  opacity: 0;
+}
+
+.navbar-toggler.active .bottom {
+  transform: rotate(-45deg);
+  bottom: 50%;
+}
 #about {
   position: relative;
   width: 100%;
