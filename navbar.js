@@ -1,5 +1,4 @@
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const toggler = document.querySelector('.navbar-toggler');
     const menu = document.getElementById('menu');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -21,4 +20,3 @@
       });
     });
   });
-</script>
