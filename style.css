@@ -645,59 +645,52 @@ h1, h2, h3, h4, h5, h6 {
 /* === MOBILE PORTFOLIO: PION === */
 @media (max-width: 768px) {
 
-  /* wyłączamy carousel */
-  #portfolioCarousel {
-    display: none;
+  /* wyłączamy przesuwanie karuzeli */
+  #portfolioCarousel .carousel-inner {
+    transform: none !important;
   }
 
-  /* pokazujemy normalny układ */
-  .portfolio-section .row {
+  #portfolioCarousel .carousel-item {
+    display: block !important;
+    float: none;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /* układ pionowy kart */
+  #portfolioCarousel .row {
     flex-direction: column;
   }
 
-  .portfolio-card {
-    height: auto;
+  /* chowamy strzałki */
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
   }
 
-  .portfolio-card img,
-  .portfolio-card video {
-    height: auto;
-  }
-
-  /* STRZAŁKA SCROLL */
+}
+@media (max-width: 768px) {
   .scroll-hint {
     position: fixed;
-    bottom: 24px;
+    bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    width: 18px;
+    height: 18px;
+    border-right: 2px solid rgba(255,255,255,0.6);
+    border-bottom: 2px solid rgba(255,255,255,0.6);
+    transform: translateX(-50%) rotate(45deg);
+    animation: scrollPulse 1.4s infinite;
     z-index: 999;
     pointer-events: none;
   }
 
-  .scroll-hint span {
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-right: 2px solid rgba(255,255,255,0.7);
-    border-bottom: 2px solid rgba(255,255,255,0.7);
-    transform: rotate(45deg);
-    animation: scrollDown 1.6s infinite;
-  }
-
-  @keyframes scrollDown {
-    0% {
-      transform: rotate(45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      transform: rotate(45deg) translate(8px, 8px);
-      opacity: 0;
-    }
+  @keyframes scrollPulse {
+    0% { opacity: 0; transform: translate(-50%, -4px) rotate(45deg); }
+    50% { opacity: 1; }
+    100% { opacity: 0; transform: translate(-50%, 8px) rotate(45deg); }
   }
 }
+
 
 
 .programs-section {
