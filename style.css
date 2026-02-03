@@ -42,11 +42,6 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.9;
 }
 /* BLOK NA WARSTWY */
-.hero-visuals {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
 
 
 /* VIDEO – NAJNIŻEJ 
@@ -64,15 +59,22 @@ transform:
  
 }
 
-/* ZDJĘCIE GŁÓWNE */
+.hero-visuals {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+
 .hero-photo-main {
   position: absolute;
   top: 60%;
   right: 18%;
   width: 420px;
-  transform:
-    translateY(-50%);
-filter: drop-shadow(0 0 30px rgba(241, 92, 102, 0.34));  z-index: 3;
+  height: auto;
+  transform: translateY(-50%);
+  filter: drop-shadow(0 0 30px rgba(241, 92, 102, 0.35));
+  z-index: 3;
 }
 
 /* KSZTAŁTY */
