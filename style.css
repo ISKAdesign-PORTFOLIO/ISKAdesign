@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 .hero-photo-main,
 .hero-shape2 {
   position: absolute;
-  transform-style: preserve-3d;
   will-change: transform;
   transition: transform 0.1s ease-out;
 }
@@ -47,8 +46,6 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  perspective: 1500px;
-  perspective-origin: center center;
 }
 
 
@@ -76,22 +73,9 @@ transform:
   transform:
     translateY(-50%);
 
- filter: 0 30px 80px rgba(241, 92, 102, 0.243);
+ filter: 0 30px 80px rgba(241, 92, 102, 0.343);
   z-index: 3;
 }
-.hero-video,
-.hero-photo-main {
-  transform-style: preserve-3d;
-  will-change: transform;
-}
-.hero-video {
-  scale: 0.95;
-}
-
-.hero-photo-main {
-  scale: 1.05;
-}
-
 
 /* KSZTAŁTY */
 
