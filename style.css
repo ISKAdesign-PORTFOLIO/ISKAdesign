@@ -82,13 +82,13 @@ transform:
 
   
 .hero-shape2 {
-  width: 160px;
-  top: 40%;
+  width: 100%;
+  top: -10%;
   bottom: 27%;
-  right: 12%;
+  right: 1%;
   position: absolute;
   z-index: 2;
-  opacity: 0.8;
+  opacity: 0.4;
 
 
 }
