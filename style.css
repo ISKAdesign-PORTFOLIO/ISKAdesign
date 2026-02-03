@@ -31,7 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 .hero-video,
 .hero-photo-main,
 .hero-shape2 {
-  transition: transform 0.15s ease-out;
+  position: absolute;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.1s ease-out;
 }
 
 .hero p {
@@ -44,8 +47,8 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  perspective: 1200px;
-
+  perspective: 1500px;
+  perspective-origin: center center;
 }
 
 
@@ -56,9 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 7%;
   width: 320px;
 transform:
-    translateY(-50%)
-    rotateZ(10deg)
-  rotateX(1deg);
+    translateY(-50%);
   border-radius: 20px;
   opacity: 0.7;
   filter: saturate(0.85) contrast(0.9) brightness(0.95);
@@ -73,9 +74,7 @@ transform:
   right: 18%;
   width: 320px;
   transform:
-    translateY(-50%)
-    rotateZ(10deg)
-    rotateX(1deg);
+    translateY(-50%);
   border-radius: 20px;
   box-shadow: 0 30px 80px rgba(241, 92, 102, 0.243);
   z-index: 3;
