@@ -44,6 +44,8 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  perspective: 1200px;
+
 }
 
 
@@ -53,8 +55,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 40%;
   right: 7%;
   width: 320px;
-  transform: translateY(-50%) rotateZ(-6deg);
-  border-radius: 20px;
+transform:
+    translateY(-50%)
+    rotateZ(-8deg)
+    rotateY(12deg)
+    rotateX(4deg);  border-radius: 20px;
   opacity: 0.7;
   filter: saturate(0.85) contrast(0.9) brightness(0.95);
   z-index: 1;
@@ -67,11 +72,27 @@ h1, h2, h3, h4, h5, h6 {
   top: 60%;
   right: 18%;
   width: 320px;
-  transform: translateY(-50%) rotateZ(4deg);
-  border-radius: 20px;
+  transform:
+    translateY(-50%)
+    rotateZ(6deg)
+    rotateY(-10deg)
+    rotateX(2deg);  border-radius: 20px;
   box-shadow: 0 30px 80px rgba(241, 92, 102, 0.243);
   z-index: 3;
 }
+.hero-video,
+.hero-photo-main {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.hero-video {
+  scale: 0.95;
+}
+
+.hero-photo-main {
+  scale: 1.05;
+}
+
 
 /* KSZTAŁTY */
 
