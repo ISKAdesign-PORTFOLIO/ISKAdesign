@@ -88,7 +88,7 @@ transform:
   right: 0;
   position: absolute;
   z-index: 2;
-  opacity: 0.4;
+  opacity: 0.1;
 
 
 }
@@ -252,7 +252,7 @@ transform:
     transparent 90%
   );
   filter: blur(120px);
-  top: -40%;
+  top: -30%;
   right: -5%;
   z-index: 3;
 }
@@ -857,11 +857,11 @@ transform:
 }
 .footer-shape1 {
   width: 110%;
-  bottom: -180%;
+  bottom: -200%;
   left:-5%;
   position: absolute;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.1;
 }
 .btn-contact {
   background: linear-gradient(
