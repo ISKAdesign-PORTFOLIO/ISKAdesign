@@ -75,8 +75,8 @@ transform:
   width: 420px;
   transform:
     translateY(-50%);
-  border-radius: 20px;
-  box-shadow: 0 30px 80px rgba(241, 92, 102, 0.243);
+
+ filter: 0 30px 80px rgba(241, 92, 102, 0.243);
   z-index: 3;
 }
 .hero-video,
@@ -102,7 +102,7 @@ transform:
   bottom: 27%;
   right: 12%;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   opacity: 0.8;
 
 
