@@ -1,11 +1,17 @@
-const portfolio = document.querySelector('.portfolio-section');
-const hint = document.querySelector('.portfolio-scroll-hint');
+document.addEventListener("DOMContentLoaded", () => {
+  const portfolio = document.querySelector(".portfolio-section");
+  const hint = document.querySelector(".portfolio-scroll-hint");
 
-const observer = new IntersectionObserver(
-  ([entry]) => {
-    hint.style.opacity = entry.isIntersecting ? '1' : '0';
-  },
-  { threshold: 0.3 }
-);
+  if (!portfolio || !hint) return;
 
-observer.observe(portfolio);
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      hint.style.opacity = entry.isIntersecting ? "1" : "0";
+    },
+    {
+      threshold: 0.2
+    }
+  );
+
+  observer.observe(portfolio);
+});
