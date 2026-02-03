@@ -68,7 +68,7 @@ transform:
 
 .hero-photo-main {
   position: absolute;
-  top: 60%;
+  top: 50%;
   right: 10%;
   width: 520px;
   opacity: 0.8;
@@ -83,7 +83,7 @@ transform:
   
 .hero-shape2 {
   width: 160px;
-  top: 50%;
+  top: 40%;
   bottom: 27%;
   right: 12%;
   position: absolute;
