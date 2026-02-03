@@ -319,7 +319,7 @@ transform:
 .navbar-nav .nav-link::after {
   content: '';
   position: absolute;
-  left: 0;
+  left: 2px;
   bottom: -4px; /* odstęp od tekstu */
   width: 0%;
   height: 2px;
