@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* VIDEO – NAJNIŻEJ */
+/* VIDEO – NAJNIŻEJ 
 .hero-video {
   position: absolute;
   top: 40%;
@@ -63,7 +63,7 @@ transform:
   border-radius: 20px;
   opacity: 0.7;
   filter: saturate(0.85) contrast(0.9) brightness(0.95);
-  z-index: 1;
+  z-index: 1;*/
  
 }
 
@@ -72,7 +72,7 @@ transform:
   position: absolute;
   top: 60%;
   right: 18%;
-  width: 320px;
+  width: 420px;
   transform:
     translateY(-50%);
   border-radius: 20px;
