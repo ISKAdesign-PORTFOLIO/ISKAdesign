@@ -323,7 +323,7 @@ transform:
   left: 0;
   bottom: -4px; /* odstęp od tekstu */
   width: 0%;
-  height: 3px;
+  height: 2px;
   background: #df4c64; /* różowe */
   border-radius: 2px;
   transition: width 0.3s ease;
@@ -331,7 +331,7 @@ transform:
 
 /* hover: rozciągnięcie podkreślenia */
 .navbar-nav .nav-link:hover::after {
-  width: 100%;
+  width: 50%;
 }
 
 /* aktywna zakładka */
