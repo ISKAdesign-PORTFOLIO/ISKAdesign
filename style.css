@@ -72,9 +72,7 @@ transform:
   width: 420px;
   transform:
     translateY(-50%);
-
- filter: 0 30px 80px rgba(241, 92, 102, 0.343);
-  z-index: 3;
+filter: drop-shadow(0 0 30px rgba(241, 92, 102, 0.34));  z-index: 3;
 }
 
 /* KSZTAŁTY */
