@@ -282,24 +282,30 @@ transform:
   width: calc(100% - 120px);
   max-width: 1100px;
 
-  background: rgba(20, 20, 30, 0.6);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  background: rgba(18, 18, 26, 0.35);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.06);
 
-  padding: 0.9rem 2rem;
+  padding: 0.9rem 6rem;
   z-index: 1000;
 
   box-shadow:
-    0 20px 60px rgba(0,0,0,0.45);
+    0 25px 70px rgba(0,0,0,0.55),
+    0 0 40px rgba(255,255,255,0.03);
+
+  position: fixed;
+  overflow: hidden;
 }
+
+
 
 
 .navbar-brand span {
   font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   letter-spacing: 0.02em;
 }
 
@@ -342,6 +348,24 @@ transform:
 .navbar-nav .nav-link.active::after {
   width: 100%;
 }
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0.18) 0%,
+    rgba(255,255,255,0.08) 25%,
+    rgba(255,255,255,0.03) 40%,
+    transparent 60%
+  );
+
+  opacity: 0.6;
+}
+
 .toggler-icon {
   width: 26px;
   height: 2px;
