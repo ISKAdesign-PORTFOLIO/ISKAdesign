@@ -426,10 +426,10 @@ transform:
   z-index: 2;
   padding: 0 1.5rem 4rem;
 }
-.about::before {
+#about::before {
   content: "";
   position: absolute;
-  top: -140px;
+  top: -180px;
   left: 50%;
   transform: translateX(-50%);
 
