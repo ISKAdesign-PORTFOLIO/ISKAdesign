@@ -230,7 +230,9 @@ transform:
     #a855f1);
   color: #ffffff;
 }
-
+.hero .container {
+  padding-bottom: 200px;
+}
 .hero-bg {
   position: absolute;
   max-width: 420px;
@@ -387,6 +389,9 @@ transform:
   position: relative;
   width: 100%;
   overflow: visible;
+  margin-top: -120px; /* NACHODZENIE */
+  z-index: 2;
+  padding: 0 1.5rem 6rem;
 }
 #about::before {
   content: "";
@@ -408,6 +413,18 @@ transform:
 #about .container {
   position: relataive;
   z-index: 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem;
+
+  background:   rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.4),
+    0 0 40px rgba(168,85,241,0.25);
+
+  backdrop-filter: blur(8px);
 }
 #about p {
   font-size: 1rem;
@@ -559,7 +576,7 @@ transform:
 .portfolio-card {
 
   background: rgba(255,255,255,0.03);
-  border-radius: 24px;
+  border-radius: 16px;
    backdrop-filter: blur(8px);
   border: 1px solid rgba(255,255,255,0.08);
   overflow: hidden;
