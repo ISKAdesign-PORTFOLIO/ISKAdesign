@@ -222,7 +222,7 @@ transform:
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 2px;
   background: var(--accent-gradient);
   -webkit-mask:
@@ -281,7 +281,7 @@ transform:
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 120px);
-  max-width: 100%;
+  max-width: 1400;
 
   background: rgba(18, 18, 26, 0.35);
   backdrop-filter: blur(18px);
