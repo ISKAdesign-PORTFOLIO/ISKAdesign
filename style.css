@@ -440,7 +440,7 @@ transform:
   height: 360px;
 
  background: radial-gradient(
-    ellipse at center,
+    circle,
     rgba(168,85,241, 0.45),
     rgba(168,85,241, 0.25),
     transparent 70%
@@ -458,7 +458,7 @@ transform:
   z-index: 0;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 4rem 1.5rem;
 
   background: rgba(18, 18, 26, 0.35);
   backdrop-filter: blur(18px);
