@@ -191,7 +191,7 @@ transform:
   position: absolute;
   display: inline-block;
   padding: 12px 32px;
-  border-radius: 16px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
   background: transparent;
@@ -210,8 +210,8 @@ transform:
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 16px;
-  padding: 2px;
+  border-radius: 8px;
+  padding: 1px;
   background: var(--accent-gradient);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
