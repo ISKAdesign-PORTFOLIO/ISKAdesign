@@ -4,7 +4,7 @@
   --blue: #4a6fdc;
   --dark: #0b0b0f;
   --light: #f8f9fa;
-  --panel: rgba(255, 255, 255, 0.05);
+  --panel: rgba(18, 18, 26, 0.35);
   --panel-border: rgba(255, 255, 255, 0.12);
   --accent-gradient: linear-gradient(120deg, #f15c66, #a855f1);
 }
@@ -14,6 +14,7 @@ body {
   background: radial-gradient(circle at top, rgba(168, 85, 241, 0.12), transparent 50%),
     #0b0b0f;
   color: #f5f5f7;
+  overflow-x: hidden;
 }
 html, body {
   -webkit-overflow-scrolling: touch;
@@ -55,7 +56,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+  z-index: 1;
 }
 .hero-video,
 .hero-photo-main,
@@ -279,7 +281,7 @@ transform:
   filter: blur(120px);
   top: -30%;
   right: -5%;
-  z-index: 3;
+  z-index: 0;
 }
 .hero::after {
   content: "";
@@ -295,6 +297,11 @@ transform:
   bottom: -20%;
   left: -10%;
   z-index: 0;
+}
+.hero .container,
+.hero-visuals {
+  position: relative;
+  z-index: 2;
 }
 
 .navbar {
@@ -352,6 +359,11 @@ transform:
     rgba(255,255,255,0.3),
     transparent
   );
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand span {
@@ -463,6 +475,20 @@ transform:
     background: #0b0b0f;
     padding: 1.5rem;
   }
+  .navbar .container {
+    flex-wrap: nowrap;
+  }
+  .navbar-brand {
+    margin-right: auto;
+  }
+  .navbar-toggler {
+    margin-left: auto;
+    order: 2;
+  }
+  .navbar-collapse {
+    order: 3;
+    width: 100%;
+  }
 }
 /* usuwa mobile tap highlight */
 .navbar-toggler {
@@ -482,7 +508,7 @@ transform:
   overflow: visible;
   margin-top: -120px; /* NACHODZENIE */
   z-index: 2;
-  padding: 0 1.5rem 6rem;
+  padding: 0 1.5rem 4rem;
 }
 #about::before {
   content: "";
@@ -531,7 +557,7 @@ transform:
 }
 
 .section-space {
-  margin: 8rem 0;
+  margin: 5rem 0;
 }
 #hero {
   padding-top: 80px;
@@ -541,7 +567,7 @@ transform:
 .services-section,
 .portfolio-section,
 .programs-section {
-  padding-top: 140px;
+  padding-top: 120px;
   padding-bottom: 140px;
 }
 
@@ -997,7 +1023,6 @@ transform:
   opacity: 0.9;
   transform: translateY(-2px);
 }
-
 
 
 
