@@ -471,26 +471,43 @@ transform:
   top: 0;
 }
 @media (max-width: 991px) {
-  .navbar-collapse {
-    padding: 1rem;
-  }
   .navbar .container {
-    flex-wrap: nowrap;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
   }
+
   .navbar-brand {
-    margin-right: auto;
+    flex-shrink: 0;
   }
+
   .navbar-toggler {
-    margin-left: auto;
+    margin: 0;
     padding: 0;
     border: none;
   }
   .navbar-collapse {
-    order: 3;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
     width: 100%;
+
+    background: rgba(18, 18, 26, 0.6);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-radius: 18px;
+    padding: 1rem 1.5rem;
+
+    box-shadow: 0 25px 70px rgba(0,0,0,0.6);
   }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }  
 }
 /* usuwa mobile tap highlight */
 .navbar-toggler {
