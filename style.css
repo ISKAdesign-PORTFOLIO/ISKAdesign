@@ -282,7 +282,7 @@ transform:
 .navbar {
   position: fixed;
   top: 24px;
-  left: 20%;
+  left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 120px);
   max-width: 100%;
@@ -412,6 +412,25 @@ transform:
 
 .toggler-icon::after {
   top: 8px;
+}
+@media (max-width: 991px) {
+
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .navbar-brand {
+    flex-shrink: 0;
+  }
+
+  .navbar-toggler {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
 }
 
 
