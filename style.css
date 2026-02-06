@@ -456,9 +456,9 @@ transform:
 #about .container {
   position: relative;
   z-index: 1;
-  max-width: 1250px;
+  max-width: 1150px;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 4rem;
 
   background: rgba(18, 18, 26, 0.35);
   backdrop-filter: blur(18px);
