@@ -309,7 +309,7 @@ transform:
   top: 24px;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 120px);
+  width: calc(100% - 40px);
   max-width: 100%;
 
   background: rgba(18, 18, 26, 0.35);
@@ -319,7 +319,7 @@ transform:
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.12);
 
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.2rem;
   z-index: 1000;
 
   box-shadow:
@@ -476,13 +476,16 @@ transform:
   }
   .navbar .container {
     flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
   }
   .navbar-brand {
     margin-right: auto;
   }
   .navbar-toggler {
     margin-left: auto;
-    order: 2;
+    padding: 0;
+    border: none;
   }
   .navbar-collapse {
     order: 3;
