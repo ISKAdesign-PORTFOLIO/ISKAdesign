@@ -455,23 +455,7 @@ transform:
   z-index: 2;
   padding: 0 1.5rem 6rem;
 }
-#about::before {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(
-    circle,
-    rgba(241,92,102,0.18),
-    rgba(168,85,241,0.12),
-    transparent 90%
-  );
-  filter: blur(160px);
-  top: -10%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
-}
+
 #about .container {
   position: relative;
   z-index: 0;
