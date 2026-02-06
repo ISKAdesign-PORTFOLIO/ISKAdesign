@@ -430,11 +430,11 @@ transform:
   content: "";
   position: absolute;
   top: -180px;
-  left: 50%;
+  left: 10%;
   transform: translateX(-50%);
 
   width: 160%;
-  height: 260px;
+  height: 360px;
 
  background: radial-gradient(
     ellipse at center,
@@ -468,9 +468,6 @@ transform:
   box-shadow:
     0 25px 70px rgba(0,0,0,0.5),
     0 0 40px rgba(255,255,255,0.05);
-
-  background:   rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
 }
 /* glass overlay */
 #about .container::before {
