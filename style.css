@@ -432,7 +432,7 @@ transform:
 #about::before {
   content: "";
   position: absolute;
-  top: -200px;
+  top: -250px;
   left: -5;
   transform: translateX(-50%);
 
@@ -456,7 +456,7 @@ transform:
 #about .container {
   position: relative;
   z-index: 1;
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 4rem;
 
