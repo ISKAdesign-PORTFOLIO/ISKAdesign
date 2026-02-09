@@ -521,7 +521,7 @@ transform:
   top: -10%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 0;
+  z-index: 1;
 }
 #about .container {
   position: relative;
@@ -531,8 +531,7 @@ transform:
   padding: 4rem;
 
   background: var(--panel);
-  border-radius: 20px;
-  border: 1px solid var(--panel-border);
+  border-radius: 18px;
 
   box-shadow:
     0 20px 50px rgba(0,0,0,0.4),
