@@ -973,14 +973,7 @@ transform:
   font-size: 0.9rem;
   opacity: 0.85;
 }
-.footer-shape1 {
-  width: 110%;
-  bottom: -200%;
-  left:-5%;
-  position: absolute;
-  z-index: 0;
-  opacity: 0;
-}
+
 .btn-contact {
   background: linear-gradient(
     100deg,
