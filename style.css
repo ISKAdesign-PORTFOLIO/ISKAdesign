@@ -8,7 +8,7 @@
   --panel-border: rgba(255, 255, 255, 0.12);
   --accent-gradient: linear-gradient(120deg, #f15c66, #a855f1);
   --site-padding: 1.5rem;
-  --layout-max: 1350px;
+  --layout-max: 1200px;
 }
 
 body {
@@ -287,6 +287,13 @@ transform:
 /* =======================
    NAVBAR – FINAL VERSION
    ======================= */
+.navbar > .container {
+  max-width: var(--site-max-width);
+  padding-left: var(--site-padding);
+  padding-right: var(--site-padding);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .navbar {
   position: fixed;
