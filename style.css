@@ -8,6 +8,7 @@
   --panel-border: rgba(255, 255, 255, 0.12);
   --accent-gradient: linear-gradient(120deg, #f15c66, #a855f1);
   --site-padding: 1.5rem;
+  --layout-max: 1350px;
 }
 
 body {
@@ -284,9 +285,10 @@ transform:
 .navbar {
   position: fixed;
   top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0 !important;
+  transform: none !important;
   width: 100%;
+}
 
   background: rgba(18, 18, 26, 0.35);
   backdrop-filter: blur(18px);
@@ -301,6 +303,18 @@ transform:
   box-shadow:
     0 25px 70px rgba(0,0,0,0.5),
     0 0 40px rgba(255,255,255,0.05);
+}
+.navbar > .container {
+  max-width: var(--layout-max);
+  padding-left: var(--layout-padding);
+  padding-right: var(--layout-padding);
+}
+
+/* SEKCJE – wyrównanie do tej samej linii */
+section > .container {
+  max-width: var(--layout-max);
+  padding-left: var(--layout-padding);
+  padding-right: var(--layout-padding);
 }
 
 /* glass overlay */
