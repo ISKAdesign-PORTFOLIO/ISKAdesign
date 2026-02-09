@@ -289,9 +289,6 @@ transform:
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: var(--site-max-width);
-  padding-left: var(--site-padding);
-  padding-right: var(--site-padding);
 
   background: rgba(18, 18, 26, 0.35);
   backdrop-filter: blur(18px);
