@@ -66,6 +66,40 @@ transform:
   filter: saturate(0.85) contrast(0.9) brightness(0.95);
   z-index: 1;*/
  
+/* ================================
+   JEDEN SYSTEM POZIOMY – FIX
+   ================================ */
+
+
+/* 2. WSZYSTKIE kontenery treści */
+.container,
+.navbar > .container {
+  max-width: var(--layout-max) !important;
+  padding-left: var(--layout-padding) !important;
+  padding-right: var(--layout-padding) !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 3. NAVBAR – BEZ kombinacji */
+.navbar {
+  left: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+  width: 100% !important;
+}
+
+/* 4. HERO – USUWAMY ręczne przesunięcia */
+.hero-title {
+  margin-left: 0 !important;
+}
+
+/* 5. ABOUT – NIE full width */
+#about .container {
+  max-width: var(--layout-max) !important;
+  padding-left: var(--layout-padding) !important;
+  padding-right: var(--layout-padding) !important;
+}
 
 .hero-visuals {
   position: absolute;
