@@ -7,7 +7,7 @@
   --panel: rgba(18, 18, 26, 0.35);
   --panel-border: rgba(255, 255, 255, 0.12);
   --accent-gradient: linear-gradient(120deg, #f15c66, #a855f1);
-  --layout-padding: clamp(1.5rem, 4vw, 3rem);
+  --layout-padding: clamp(1.5rem, 4vw, 5rem);
   --layout-max: 1200px;
 }
 
