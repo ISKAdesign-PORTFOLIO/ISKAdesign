@@ -7,7 +7,7 @@
   --panel: rgba(18, 18, 26, 0.35);
   --panel-border: rgba(255, 255, 255, 0.12);
   --accent-gradient: linear-gradient(120deg, #f15c66, #a855f1);
-  --site-padding: 1.5rem;
+  --layout-padding: clamp(1.5rem, 4vw, 3rem);
   --layout-max: 1200px;
 }
 
@@ -280,27 +280,29 @@ transform:
 .container,
 .container-lg,
 .container-xl {
-  max-width: var(--site-max-width) !important;
-  padding-left: var(--site-padding) !important;
-  padding-right: var(--site-padding) !important;
+  max-width: var(--layout-max-width) !important;
+  padding-left: var(--layout-padding) !important;
+  padding-right: var(--layout-padding) !important;
 }
 /* =======================
    NAVBAR – FINAL VERSION
    ======================= */
 .navbar > .container {
-  max-width: var(--site-max-width);
-  padding-left: var(--site-padding);
-  padding-right: var(--site-padding);
+  max-width: var(--layout-max-width);
+  padding-left: var(--layout-padding);
+  padding-right: var(--layout-padding);
   margin-left: auto;
   margin-right: auto;
 }
 
 .navbar {
-  position: fixed;
-  top: 24px;
-  left: 0 !important;
-  transform: none !important;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - (var(--layout-padding) * 2));
+  max-width: var(--layout-max);
+  padding-left: 0;
+  padding-right: 0;
+
   background: rgba(18, 18, 26, 0.35);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
