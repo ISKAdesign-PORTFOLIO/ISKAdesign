@@ -277,7 +277,13 @@ transform:
   z-index: 0;
 }
 
-
+.container,
+.container-lg,
+.container-xl {
+  max-width: var(--site-max-width) !important;
+  padding-left: var(--site-padding) !important;
+  padding-right: var(--site-padding) !important;
+}
 /* =======================
    NAVBAR – FINAL VERSION
    ======================= */
@@ -288,8 +294,6 @@ transform:
   left: 0 !important;
   transform: none !important;
   width: 100%;
-}
-
   background: rgba(18, 18, 26, 0.35);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
