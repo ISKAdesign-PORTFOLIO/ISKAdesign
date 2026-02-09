@@ -7,6 +7,15 @@
   --panel: rgba(18, 18, 26, 0.35);
   --panel-border: rgba(255, 255, 255, 0.12);
   --accent-gradient: linear-gradient(120deg, #f15c66, #a855f1);
+  --site-max-width: 1200px;
+  --site-padding: 1.5rem;
+}
+
+.container {
+  max-width: var(--site-max-width) !important;
+  padding-left: var(--site-padding) !important;
+  padding-right: var(--site-padding) !important;
+}
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -458,7 +467,7 @@ transform:
   z-index: 1;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 4rem 0;
 
   background: rgba(18, 18, 26, 0.35);
   backdrop-filter: blur(18px);
