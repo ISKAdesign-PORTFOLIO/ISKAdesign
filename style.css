@@ -482,6 +482,17 @@ transform:
     0 25px 70px rgba(0,0,0,0.5),
     0 0 40px rgba(255,255,255,0.05);
 }
+#about .container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 10%,
+    rgba(168,85,241,0.25),
+    transparent 90%
+  );
+  filter: blur(180px);
+}
 /* glass overlay */
 #about .container::before {
   content: "";
