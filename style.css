@@ -11,11 +11,6 @@
   --site-padding: 1.5rem;
 }
 
-.container {
-  max-width: var(--site-max-width) !important;
-  padding-left: var(--site-padding) !important;
-  padding-right: var(--site-padding) !important;
-}
 body {
   font-family: 'Open Sans', sans-serif;
   background: #0b0b0f;
