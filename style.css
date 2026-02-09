@@ -294,10 +294,10 @@ transform:
   left: -15%;
   z-index: 0;
 }
-.hero .container,
 .hero-visuals {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
 }
 
 .navbar {
