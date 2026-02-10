@@ -46,13 +46,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
   min-height: 100vh;
-  background: #0b0b0f;
   color: #f8f9fa;
   display: flex;
   align-items: center;
   position: relative;
   overflow: visible;
-  z-index: 1;
+  z-index: 2;
 }
 .hero-video,
 .hero-photo-main,
@@ -260,46 +259,84 @@ transform:
   left: 50%;
   border-radius: 16px;
   z-index: 0;
-  opacity: 0.85;
+  opacity: 0;
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 820px;
-  height: 820px;
-  background: radial-gradient(
-    circle,
-    rgba(241,92,102,0.6),
-    rgba(168,85,241,0.28),
-    transparent 88%
-  );
-  filter: blur(140px);
-  top: -35%;
-  right: -10%;
-  z-index: 0;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 760px;
-  height: 760px;
-  background: radial-gradient(
-    circle,
-    rgba(168,85,241,0.45),
-    rgba(241,92,102,0.18),
-    transparent 72%
-  );
-  filter: blur(160px);
-  bottom: -30%;
-  left: -15%;
-  z-index: 2;
-}
+
 .hero-visuals {
   position: absolute;
   inset: 0;
   z-index: 3;
 }
+/* --- GLOBAL GLOWS CONTAINER --- */
+/* KONTENER TŁA */
+.site-background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
 
+/* WSPÓLNY STYL KUL (BLOBS) */
+.glow-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(130px); /* Ten sam blur co wcześniej */
+  opacity: 0.5;
+}
+
+/* LEWA POŚWIATA (Ta co była spoko) */
+.glow-left-main {
+  width: 700px;
+  height: 700px;
+  top: 50%;
+  left: -450px;
+  transform: translateY(-20%);
+  background: radial-gradient(
+    circle at center,
+    var(--pink) 0%, 
+    var(--violet) 40%, 
+    rgba(142, 45, 226, 0) 70%
+  );
+  mix-blend-mode: screen;
+  opacity: 0.3;
+}
+
+/* PRAWA POŚWIATA (Zrobiona tak samo jak lewa) */
+.glow-right-main {
+  width: 700px;
+  height: 700px;
+  top: -100px;      /* Ustawiona na górze */
+  right: -250px;    /* Wystaje z prawej */
+  background: radial-gradient(
+    circle at center,
+    var(--pink) 0%,     /* Niebieski środek */
+    var(--violet) 45%,  /* Fioletowa otoczka */
+    rgba(142, 45, 226, 0) 70%
+  );
+  mix-blend-mode: screen;
+  opacity: 0.5; /* Nieco lżejsza, żeby nie odciągać uwagi od treści */
+}
+/* --- MOBILE (Dopasowanie) --- */
+@media (max-width: 991px) {
+  .glow-left-main {
+    width: 400px;
+    height: 600px;
+    left: -150px;
+    top: 50%;
+    filter: blur(80px);
+  }
+  .glow-right-main {
+    width: 300px;
+    height: 300px;
+    right: -100px;
+    top: -50px;
+    filter: blur(60px);
+  }
+}
 .navbar {
   position: fixed;
   top: 24px;
@@ -502,34 +539,17 @@ transform:
   width: 100%;
   overflow: visible;
   margin-top: -120px; /* NACHODZENIE */
-  z-index: 1;
+  z-index: 0;
   padding: 0 1.5rem 4rem;
+  background: transparent !important;
 }
-#about::before {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(
-    circle,
-    rgba(241,92,102,0.18),
-    rgba(168,85,241,0.12),
-    transparent 90%
-  );
-  filter: blur(160px);
-  top: -10%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
+
 #about .container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   max-width: var(--layout-max);
   margin: 0 auto;
   padding: 4rem;
-
-  background: var(--panel);
   border-radius: 18px;
 
   box-shadow:
