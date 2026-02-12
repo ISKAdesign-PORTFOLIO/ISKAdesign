@@ -519,6 +519,7 @@ transform:
     margin: 0;
     padding: 10px;
     z-index: 1001;
+   border: 0 !important;
   }
   .navbar-collapse {
     order: 3;
