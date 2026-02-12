@@ -360,7 +360,7 @@ transform:
     0 0 40px rgba(255,255,255,0.05);
 
   position: fixed;
-  overflow: hidden;
+  overflow: visible;
 }
 .navbar::before {
   content: "";
@@ -508,18 +508,26 @@ transform:
     padding: 1.5rem;
   }
   .navbar .container {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .navbar-brand {
     margin-right: auto;
   }
-  .navbar-toggler {
-    margin-left: auto;
+ .navbar-toggler {
     order: 2;
+    margin: 0;
+    padding: 10px;
+    z-index: 1001;
   }
   .navbar-collapse {
     order: 3;
     width: 100%;
+    flex-basis: 100%;
+  }
+  .navbar-nav {
+    margin-top: 1rem;
+    gap: 1rem; /* Odstępy między linkami */
   }
 }
 /* usuwa mobile tap highlight */
