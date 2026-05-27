@@ -44,20 +44,22 @@
         <li class="nav-item"><a class="nav-link" href="#services">Usługi</a></li>
         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link" href="#programs">Programy</a></li>
-        <li><a href="#!" id="open-price-list">Cennik</a></li>
+        <li class="nav-item">
+  <a 
+    class="nav-link nav-price-link" 
+    href="#" 
+    data-bs-toggle="modal" 
+    data-bs-target="#priceModal">
+    Cennik
+  </a>
+</li>
 
         <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<!-- Kontener modala -->
-<div id="price-modal" class="modal">
-  <div class="modal__content">
-    <button class="modal__close" aria-label="Zamknij">&times;</button>
-    <img src="images/cennik.png" alt="Cennik" class="modal__image">
-  </div>
-</div>
+
   
 <!-- HERO -->
 <section id="start" class="hero">
@@ -606,6 +608,24 @@ oraz w  branży nieruchomości.
   </footer>
 
 </section>
+  <div class="modal fade" id="priceModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered price-modal-dialog">
+    <div class="modal-content price-modal-content">
+
+      <button
+        type="button"
+        class="btn-close price-modal-close"
+        data-bs-dismiss="modal"
+        aria-label="Zamknij">
+      </button>
+
+      <div class="modal-body price-modal-body">
+        <img src="img/cennik.jpg" alt="Cennik Iska Design" class="price-modal-img">
+      </div>
+
+    </div>
+  </div>
+</div>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
