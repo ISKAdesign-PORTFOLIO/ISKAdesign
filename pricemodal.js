@@ -1,4 +1,3 @@
-<script>
 document.getElementById('open-price-list').addEventListener('click', function(e) {
   e.preventDefault();
   document.getElementById('price-modal').classList.add('modal--visible');
@@ -15,4 +14,3 @@ document.getElementById('price-modal').addEventListener('click', function(e) {
     this.classList.remove('modal--visible');
   }
 });
-</script>
